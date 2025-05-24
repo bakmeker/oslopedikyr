@@ -1,0 +1,94 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f4f6fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.blog-container {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.blog-container h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #321E3C;
+}
+
+.blog-post {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.blog-post h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.blog-post h2 a {
+    text-decoration: none;
+    color: #321E3C;
+}
+
+.blog-post h2 a:hover {
+    color: #b77fa5;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    color: #555;
+}
+
+.cs-button-solid {
+    display: inline-block;
+    background-color: #b77fa5;
+    color: white;
+    padding: 0.6rem 1.4rem;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.cs-button-solid:hover {
+    background-color: #a06990;
+    transform: scale(1.02);
+}
+
+/* Responsiv tilpasning */
+@media (max-width: 600px) {
+    .blog-post {
+        padding: 1.2rem;
+    }
+
+    .blog-post h2 {
+        font-size: 1.2rem;
+    }
+
+    .cs-button-solid {
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem;
+    }
+}
